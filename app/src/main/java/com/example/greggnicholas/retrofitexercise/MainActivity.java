@@ -16,7 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends AppCompatActivity {
     private static final String Base_URL_HOUND_API = "https://dog.ceo";
     private HoundService houndService;
-    private ImageView catView;
+    private ImageView dogView;
     private RecyclerView recyclerView;
     private RecyclerViewAdapter adapter;
 
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        catView = findViewById(R.id.cat_view);
+        dogView = findViewById(R.id.dog_view);
         recyclerView = findViewById(R.id.recycler_view);
 
 
